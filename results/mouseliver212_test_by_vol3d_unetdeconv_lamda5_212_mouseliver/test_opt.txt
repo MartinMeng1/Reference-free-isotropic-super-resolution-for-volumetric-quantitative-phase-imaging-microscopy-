@@ -1,0 +1,65 @@
+----------------- Options ---------------
+                 add_date: False                         
+             aspect_ratio: 1.0                           
+     background_threshold: [None, None]                  
+               batch_size: 1                             
+               border_cut: 16                            	[default: 0]
+          checkpoints_dir: ./checkpoints                 
+          compare_with_gt: False                         
+         conversion_plane: ['yz', 'xy']                  
+                crop_size: [0, 0, 0]                     
+                data_name: mouseliver212_test            	[default: None]
+                data_type: uint16                        
+                 dataroot: /home/hice1/qmeng60/scratch/Mouse_Liver_Volume	[default: None]
+              dataroot_gt: None                          
+             dataset_mode: simulationcrop                	[default: braincube]
+                    debug: False                         
+                dice_size: [120, 120, 120]               	[default: [0, 0, 0]]
+                direction: AtoB                          
+        display_histogram: False                         
+          display_winsize: 256                           
+                    epoch: iter_3000                     	[default: latest]
+                     eval: False                         
+                  gpu_ids: 0                             
+          histogram_match: False                         
+          image_dimension: 3                             
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 1                             
+                  isTrain: False                         	[default: None]
+             lambda_plane: [1, 1, 1]                     
+                load_iter: 0                             	[default: 0]
+                load_size: [0, 0, 0]                     
+         max_dataset_size: inf                           
+                    model: axial_to_lateral_gan_athena   	[default: test]
+               n_layers_D: 3                             
+                     name: vol3d_unetdeconv_lamda5_212_mouseliver	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: unet_deconv                   
+                   netG_B: deep_linear_gen               
+                      ngf: 64                            
+               no_dropout: True                          
+            no_pin_memory: False                         
+                     norm: instance                      
+      normalize_intensity: False                         
+                    ntest: inf                           
+                 num_test: 3000                          
+              num_threads: 8                             
+                output_nc: 1                             
+                  overlap: 32                            	[default: 0]
+                    phase: test                          
+               preprocess: addColorChannel               	[default: none]
+    reference_slice_range: [None, None]                  
+               repetition: False                         
+              results_dir: ./results                     	[default: ./results/]
+                sat_level: [0.25, 99.75]                 
+         save_projections: False                         
+              save_slices: True                          	[default: False]
+              save_volume: True                          	[default: False]
+           serial_batches: False                         
+                   server: not-specified                 
+                skip_real: True                          	[default: False]
+                   suffix:                               
+                  verbose: False                         
+----------------- End -------------------
